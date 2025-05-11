@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KGS IAS ADHIKARI</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>KGS IAS ADHIKARI</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Courses</a>
+      <a href="#">Test</a>
+      <a href="#">Notes</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Welcome to KGS IAS ADHIKARI</h2>
+    <p>नए कोर्सेस शुरू हो चुके हैं!</p>
+    <button onclick="exploreCourses()">Explore Courses</button>
+  </section>
+
+  <section class="content">
+    <h3>Our Courses</h3>
+    <p>Course details coming soon...</p>
+
+    <h3>Online Test</h3>
+    <p>Give our latest tests to check your preparation.</p>
+
+    <h3>Class Notes (PDF)</h3>
+    <p>Download class notes here.</p>
+  </section>
+
+  <section class="form-section">
+    <h3>Ask Your Doubt</h3>
+    <form onsubmit="submitForm(event)">
+      <label>नाम:<br/><input type="text" name="name" required /></label><br/>
+      <label>Lecture विषय:<br/><input type="text" name="subject" /></label><br/>
+      <label>कोर्स का नाम:<br/><input type="text" name="course" /></label><br/>
+      <label>अपना डाउट लिखें:<br/><textarea name="doubt"></textarea></label><br/>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
